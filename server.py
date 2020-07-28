@@ -12,7 +12,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         elif "shutdown" in self.path:
             self.send_response(200)
             self.end_headers()
-            os.system("shutdown now") 
+            os.system("poweroff") 
         else:
             self.send_response(200)
             self.end_headers()
